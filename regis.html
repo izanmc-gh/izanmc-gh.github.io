@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regis</title>
+
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body class="body">
+
+<header class="main">
+
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-purple" style="display:none;z-index:2;width:20%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+           class="w3-bar-item w3-button">Menu</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Inici</a>
+        <a href="quiSom.html" onclick="w3_close()" class="w3-bar-item w3-button">Qui som</a>
+        <a href="contac.html" onclick="w3_close()" class="w3-bar-item w3-button">Contacte</a>
+        <a href="llistat.html" onclick="w3_close()" class="w3-bar-item w3-button">Llistat d'articles</a>
+        <a href="articles.html" onclick="w3_close()" class="w3-bar-item w3-button">Detall d'articles</a>
+        <br>
+        <br>
+        <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LogIn</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-purple w3-xlarge" style="max-width:2000px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">Registrar-se</div>
+        </div>
+    </div>
+
+</header>
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Registrar-se</h2>
+                            <p class="text-white-50 mb-5">Introdueix el teu correu i contrasenya:</p>
+
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                                <label class="form-label" for="typeEmailX">Correu</label>
+                            </div>
+
+                            <div class="form-outline form-white mb-4">
+                                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                                <label class="form-label" for="typePasswordX">Contrasenya</label>
+                            </div>
+
+                            <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Registrar-se</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+</body>
+</html>
